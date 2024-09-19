@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  overflow-x: hidden;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.section {
+  padding: 50px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+.skill-bar {
+  margin: 20px 0;
+}
+
+.progress {
+  background-color: #ddd;
+  height: 25px;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 80%;
+  margin: 10px auto;
+}
+
+.progress-bar {
+  background-color: #00bcd4;
+  height: 100%;
+  width: 0;
+  transition: width 2s;
+}
+
+.project {
+  background-color: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+  margin-bottom: 10px;
+}
+
+.project p {
+  color: #666;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.section {
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+#about { animation-delay: 0.5s; }
+#skills { animation-delay: 1s; }
+#projects { animation-delay: 1.5s; }
+#contact { animation-delay: 2s; }
